@@ -193,9 +193,7 @@ color: #434455;
 
 .hero {
 
-padding-left: 15px;
-padding-right: 15px;
-padding-top: 188px;
+
 
 
 }
@@ -215,23 +213,21 @@ color: var(--hero-title-btn);
 
 display: block;
 
-padding-top: 188px;
+
 margin-bottom: 48px;
 
 }
 
 .container-hero {
- width: 1158px;
-    height: 600px;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin-left: auto;
-    margin-right: auto;
-    
-
+width: 1158px;
+padding-left: 15px;
+padding-right: 15px;
+margin-left: auto;
+margin-right: auto;
 letter-spacing: 0.02em;
-   
 background: #2E2F42;
+padding-top: 188px;
+padding-bottom: 188px;
  
 }
 
@@ -283,15 +279,12 @@ display: block;
 }
 
 .container-slogan {
-
+padding-left: 15px;
+padding-right: 15px;
 margin-left: auto;
-    margin-right: auto;
-    outline: 2px solid red;
-
-    width: 1128px;
-height: 104px;
-left: 156px;
-top: 792px;
+margin-right: auto;
+outline: 2px solid red;
+width: 1158px;
 
 }
 
@@ -321,11 +314,9 @@ letter-spacing: 0.02em;
 color: #434455;
 
 display: flex;
-margin-top: 8px;
 
 
-width: 264px;
-height: 72px;
+
 
 flex-grow: 0;
 
@@ -349,9 +340,9 @@ flex-grow: 0;
 
    
    
-   padding-bottom: 0; 
    
-   margin-bottom: 120px;
+   
+   padding-bottom: 120px;
 }
 
 .images-subtitle {
@@ -370,27 +361,27 @@ flex-grow: 0;
 
 .container-images {
     
-    
+    width: 1128px;
     margin-left: auto;
     margin-right: auto;
     outline: 2px solid red;
+padding-right: 15px;
+padding-left: 15px;
 
     
-width: 1128px;
-height: 412px;
-left: 156px;
-top: 1016px;
+
+
+
 
 }
 
 .images-electronics  {
     display: flex;
     gap: 24px;
-    
 }
 
 ------------------TEAM----------
-
+    
 .suppic {
 
 font-weight: 700;
@@ -404,24 +395,24 @@ color: var(--slog-img-teamsubtitls)
 }
 
 .team {
+    
+   
+  
    
 }
 
 .container-team {
-
-    width: 1158px;
+    
     padding-left: 15px;
-    padding-right: 15px;
+    padding-right: 15px; 
+    width: 1158px;
     margin-left: auto;
     margin-right: auto;
-    outline: 2px solid red;
-
     
-height: 732px;
-left: 0px;
-top: 1548px;
-
-background: #F4F4FD;
+    outline: 2px solid red;
+    background: #F4F4FD;  
+padding-top: 120px;
+padding-bottom: 120px;
 }
 
 .team-subtitle {
@@ -435,7 +426,7 @@ letter-spacing: 0.02em;
 text-transform: capitalize;
 color: var(--slog-img-teamsubtitls);
 
-padding-top: 120px;
+
 margin-bottom: 72px;
 
 /*padding-top: 120px;
@@ -453,13 +444,10 @@ padding-left: 638px;*/
 }
 
 .team-staff {
-    
 display: flex;
-
 justify-content: center;
 align-items: center;
-padding: 0px 0px 32px;
-gap: 32px;
+gap: 24px;
 
 }
 
@@ -491,23 +479,23 @@ color: #434455;
 ------------FOOTER------------
 
  .footer {
-  padding-top: 0;
-   padding-right: 0;
-   padding-bottom: 0; 
-   padding-left: 0;
+    
+ 
    background: #2E2F42;
    }
 
 
 .container-footer {
     background: #2E2F42;
-width: 1158px;
+    width: 1158px;
     padding-left: 15px;
     padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
     outline: 2px solid red;
-    height: 310px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    
  }
 
 .footer-link {
@@ -534,10 +522,9 @@ line-height: 1.5;
 letter-spacing: 0.02em;
 color: #E7E9FC;
 
-padding-left: 156px;
-padding-right:  700px;
-padding-bottom: 100px;
+width: 264px;
 
+padding-left: 156px;
 
 
 }
@@ -555,9 +542,6 @@ align-items: center;
 letter-spacing: 0.03em;
 text-transform: uppercase;
 color: #F4F4FD;
-
-padding-top: 100px;
-
 padding-left: 156px;
 }
 
@@ -571,13 +555,12 @@ padding-left: 156px;
 
 ----------------PAGE2 PORTFOLIO------------
 
-
 .menu-button {
-    
-    padding-top: 96px;
-  padding-bottom: 120px;
-   justify-content: center;
-   align-items: center; 
+
+
+
+justify-content: center;
+align-items: center; 
 
 
 }
@@ -587,9 +570,7 @@ padding-left: 156px;
     display: flex;
     gap: 24px;
     padding: 0px;
-    margin-left: 427px;
-    top: 168px;
-    margin-right: 427px;
+  top: 168px;
     bottom: 72px;
     justify-content: center;
     
@@ -598,7 +579,15 @@ padding-left: 156px;
     }
 
 
-
+.container-button {
+    width: 1158px;    
+    outline: 2px solid red;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 100px;
+}
 
 
 .button-item {
@@ -696,10 +685,7 @@ color: #434455;
     .images-list {
         display: flex;
         flex-wrap: wrap;
-        padding-bottom: 48px;
-       padding-top: 48px;
-       
-       column-gap: 24px;
+        column-gap: 24px;
     }
    
     .images-items {

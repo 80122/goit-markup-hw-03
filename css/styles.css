@@ -41,8 +41,7 @@ list-style: none;
 text-decoration: none;
 }
 
-
-
+*, *::after, *::before { box-sizing:border-box; }
 
 
 
@@ -56,6 +55,9 @@ left: 0px;
 top: 0px;
 
 background: #FFFFFF;
+
+border-bottom: 1px solid #E7E9FC;
+box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 
@@ -191,16 +193,21 @@ color: #434455;
 
 ----------------HERO------------------
 
+.hero style {
+
+}
 .hero {
-
-
-
+  
+    
+    background: #2E2F42;
+    padding-top: 188px;
+    padding-bottom: 188px;
 
 }
 
 .hero-title {
    
-background: #2E2F42;
+
  
 font-weight: 700;
 font-size: 56px;
@@ -219,15 +226,12 @@ margin-bottom: 48px;
 }
 
 .container-hero {
-width: 1158px;
-padding-left: 15px;
-padding-right: 15px;
+width: 1128px;
+
 margin-left: auto;
 margin-right: auto;
 letter-spacing: 0.02em;
-background: #2E2F42;
-padding-top: 188px;
-padding-bottom: 188px;
+outline: 2px solid red;
  
 }
 
@@ -292,6 +296,8 @@ width: 1158px;
     display: flex;
     gap: 24px;
     }
+
+
 .slogan-item {
     
    
@@ -314,9 +320,6 @@ letter-spacing: 0.02em;
 color: #434455;
 
 display: flex;
-
-
-
 
 flex-grow: 0;
 
@@ -356,7 +359,7 @@ flex-grow: 0;
 
 .container-images {
     
-    width: 1128px;
+    width: 1158px;
     margin-left: auto;
     margin-right: auto;
     outline: 2px solid red;
@@ -389,9 +392,10 @@ text-transform: capitalize;
 color: var(--slog-img-teamsubtitls)
 }
 
-.team {
+
+.team  {
     
-   
+
   }
 
 .container-team {
@@ -401,11 +405,12 @@ color: var(--slog-img-teamsubtitls)
     width: 1158px;
     margin-left: auto;
     margin-right: auto;
-    
+    background: #F4F4FD; 
+    padding-top: 120px;
+    padding-bottom: 120px;  
+   
     outline: 2px solid red;
-    background: #F4F4FD;  
-padding-top: 120px;
-padding-bottom: 120px;
+   
 }
 
 .team-subtitle {
@@ -434,6 +439,8 @@ padding-left: 638px;*/
 
     padding-top: 32px;
     padding-bottom: 32px;
+    padding-right: 24px;
+    padding-left: 24px;
 }
 
 .team-staff {
@@ -449,6 +456,8 @@ gap: 24px;
 .images-staff {
  
 }
+
+
 .name-staff {
 
 font-weight: 600;
@@ -471,25 +480,25 @@ color: #434455;
 
 ------------FOOTER------------
 
- .footer {
+.footer-style {
     
- 
-   background: #2E2F42;
-   }
+}
 
 
-.container-footer {
-    background: #2E2F42;
-    width: 1158px;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin-left: auto;
-    margin-right: auto;
-    outline: 2px solid red;
+.footer {
+    background-color: #2E2F42;
     padding-top: 100px;
-    padding-bottom: 100px;
+    padding-bottom: 100px; 
     
- }
+
+}
+
+.container-footer { 
+    
+   
+}
+
+
 
 .footer-link {
 
@@ -506,21 +515,23 @@ text-transform: uppercase;
 color: #4D5AE5;
 
 margin-bottom: 16px;
+
+
 }
 
 .footer-desc {
     
-background: #2E2F42;
 line-height: 1.5;
 letter-spacing: 0.02em;
 color: #E7E9FC;
 
-width: 264px;
 
-padding-left: 156px;
+width: 264px;
+margin-left: 156px;
 
 
 }
+
 
 .footer-link {
 font-family: 'Raleway', sans-serif;
@@ -548,30 +559,40 @@ padding-left: 156px;
 
 ----------------PAGE2 PORTFOLIO------------
 
-.menu-button {
+
+.menu-button style{
+   }
 
 
-
+   .menu-button {
+    padding-top: 96px;
 justify-content: center;
 align-items: center; 
 
 
 }
 
+.option-btn:hover {
+    background-color: #404BBF;
+    color: #FFFFFF;
+  }
+
+
+
+
 .button-list {
    
     display: flex;
     gap: 24px;
-    padding: 0px;
+   
   top: 168px;
     bottom: 72px;
     justify-content: center;
     
     outline: 2px solid red;
-    padding-left: 15px;
-    padding-right: 15px;
+   
 
-padding-bottom: 72px;
+
     }
 
 
@@ -582,13 +603,10 @@ padding-bottom: 72px;
     margin-right: auto;
     padding-left: 15px;
     padding-right: 15px;
-    padding-top: 96px;
-    
-}
+    }
 
     
-    
-   .button-item {
+.button-item {
  
 
 }
@@ -678,19 +696,20 @@ color: #434455;
         
         padding-top: 32px;
         padding-bottom: 48px;
-       
+       padding-left: 16px;
     }
 
     .images-list {
         display: flex;
         flex-wrap: wrap;
         column-gap: 24px;
+        row-gap: 48px;
+        padding-top: 72px;
     }
    
     .images-items {
         width: calc((100% - 48px) / 3);
        
-     
      }
    
          
@@ -708,6 +727,7 @@ color: #434455;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #F4F4FD;
+    
  }
 
 

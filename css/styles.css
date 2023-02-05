@@ -46,18 +46,16 @@ text-decoration: none;
 
 
 ----------HEADER--------------
+.header style {
+
+}
 
 .header {
-position: absolute;
-width: 1158px;
-height: 72px;
-left: 0px;
-top: 0px;
 
-background: #FFFFFF;
+background: #ffffff;
+padding-top: 24px;
+padding-bottom: 24px;
 
-border-bottom: 1px solid #E7E9FC;
-box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 
@@ -68,21 +66,18 @@ font-weight: 800;
 font-size: 18px;
 line-height: 1.33;
 
-display: flex;
-align-items: center;
+
 letter-spacing: 0.03em;
 text-transform: uppercase;
 color: #4D5AE5;
 
-padding-top: 24px;
-padding-bottom: 24px;
-
-margin-right: 76px;
+/*margin-right: 76px;*/
 }
 
 .header-list {
     display: flex;
     gap: 40px;
+    margin-left: 76px;
     }
 
 
@@ -98,13 +93,20 @@ margin-right: 76px;
     margin-left: auto;
     margin-right: auto;
     outline: 2px solid red;
-    display: flex;
     
+    
+}
+
+.section {
+    padding-top: 120px;
+    padding-bottom: 120px;
 }
 
 .div-container {
     display: flex;
     align-items: center; 
+    border-bottom: 1px solid #E7E9FC;;
+box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .address-container {
@@ -124,8 +126,7 @@ margin-right: auto;
 }
 
 .header-link {
-font-family: 'Roboto', sans-serif;
-font-style: normal;
+font-size: 16px;
 font-weight: 500;
 line-height: 1.5;
 
@@ -196,51 +197,41 @@ color: #434455;
 .hero style {
 
 }
+
 .hero {
-  
-    
-    background: #2E2F42;
+ background: #2E2F42;
     padding-top: 188px;
     padding-bottom: 188px;
-
-}
+    }
 
 .hero-title {
    
-
- 
 font-weight: 700;
 font-size: 56px;
 line-height: 1.07;
 text-align: center;
 letter-spacing: 0.02em;
-
-
 color: var(--hero-title-btn);
-
-display: block;
-
-
 margin-bottom: 48px;
 
 }
 
 .container-hero {
-width: 1128px;
-
-margin-left: auto;
-margin-right: auto;
-letter-spacing: 0.02em;
-outline: 2px solid red;
- 
+display: flex;
 }
 
+
+.hero-wrap {
+    margin: 0 auto;
+    width: 500px;
+}
 
 .hero-btn {
 min-width: 169px;
 height: 56px;
-margin-left: 480px;
-margin-right: 635px;
+/*margin-left: 480px;
+margin-right: 635px;*/
+margin-top: 188px;
 
 
 background: #4D5AE5;
@@ -251,13 +242,14 @@ font-size: 16px;
 line-height: 1.18;
 
 cursor: pointer;
-display: flex;
+
 align-items: center;
 letter-spacing: 0.04em;
 color: var(--hero-title-btn);
 
 border-radius: 4px;
 display: block;
+margin: 0 auto;
 }
 
 ------------------SLOGAN-------------
@@ -277,9 +269,8 @@ display: block;
   }
 
   .subject {
-    padding-top: 120px;
-    padding-bottom: 120px;
-    
+
+    padding-bottom: 0;
 }
 
 .container-slogan {
@@ -299,6 +290,7 @@ width: 1158px;
 
 
 .slogan-item {
+    width: 264px;
     
    
 }
@@ -340,7 +332,7 @@ flex-grow: 0;
 }
 
 .images {
- padding-bottom: 120px;
+ 
 }
 
 .images-subtitle {
@@ -392,9 +384,11 @@ text-transform: capitalize;
 color: var(--slog-img-teamsubtitls)
 }
 
+.team style {}
 
 .team  {
-    
+    background-color: #F4F4FD;  
+   
 
   }
 
@@ -406,9 +400,7 @@ color: var(--slog-img-teamsubtitls)
     margin-left: auto;
     margin-right: auto;
     background: #F4F4FD; 
-    padding-top: 120px;
-    padding-bottom: 120px;  
-   
+    
     outline: 2px solid red;
    
 }
@@ -493,11 +485,19 @@ color: #434455;
 
 }
 
-.container-footer { 
+.footer-wrap { 
     
    
 }
 
+.footer-container {
+    width: 1158px;
+    margin-left: auto;
+    margin-right: auto;
+    outline: 2px solid red;
+padding-right: 15px;
+padding-left: 15px;  
+}
 
 
 .footer-link {
@@ -527,7 +527,7 @@ color: #E7E9FC;
 
 
 width: 264px;
-margin-left: 156px;
+
 
 
 }
@@ -546,7 +546,7 @@ align-items: center;
 letter-spacing: 0.03em;
 text-transform: uppercase;
 color: #F4F4FD;
-padding-left: 156px;
+
 }
 
 
@@ -568,7 +568,7 @@ padding-left: 156px;
     padding-top: 96px;
 justify-content: center;
 align-items: center; 
-
+padding-bottom: 120px;
 
 }
 
@@ -585,9 +585,7 @@ align-items: center;
     display: flex;
     gap: 24px;
    
-  top: 168px;
-    bottom: 72px;
-    justify-content: center;
+   justify-content: center;
     
     outline: 2px solid red;
    
@@ -687,8 +685,7 @@ color: #434455;
 
     .image-portfolio {
         
-
-    }
+ }
 
 
 
@@ -697,6 +694,7 @@ color: #434455;
         padding-top: 32px;
         padding-bottom: 48px;
        padding-left: 16px;
+       padding-right: 16px;
     }
 
     .images-list {
@@ -704,11 +702,15 @@ color: #434455;
         flex-wrap: wrap;
         column-gap: 24px;
         row-gap: 48px;
-        padding-top: 72px;
+        margin-top: 72px;
     }
    
     .images-items {
         width: calc((100% - 48px) / 3);
+
+        background: #FFFFFF;
+
+        border: 1px solid #E7E9FC;
        
      }
    
